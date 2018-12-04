@@ -45,7 +45,7 @@ module.exports = {
   mariadb: {
     database: process.env.SEQ_MYSQL_DB   || process.env.SEQ_DB   || 'sequelize_test',
     username: process.env.SEQ_MYSQL_USER || process.env.SEQ_USER || 'root',
-    password: process.env.SEQ_MYSQL_PW   || process.env.SEQ_PW   || null,
+    password: process.env.SEQ_MYSQL_PW   || process.env.SEQ_PW   || 'maria$db',
     host:     process.env.SEQ_MYSQL_HOST || process.env.SEQ_HOST || '127.0.0.1',
     port:     process.env.SEQ_MYSQL_PORT || process.env.SEQ_PORT || 3306,
     pool:     {
